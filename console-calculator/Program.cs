@@ -50,11 +50,15 @@ namespace console_calculator
 
                     string userPromptThree = Console.ReadLine();
 
-                    int num2 = int.Parse(userPromptThree);
+                    string num1ToString = num1.ToString();
+
+                    float newNum1 = float.Parse(num1ToString);
+
+                    float num2 = float.Parse(userPromptThree);              
 
                     Console.Write("Sum: ");
 
-                    Console.WriteLine(num1 / num2);
+                    Console.WriteLine(newNum1 / num2);                  
                 }
                 else if (userPromptTwo == "*")
                 {
